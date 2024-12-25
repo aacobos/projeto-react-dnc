@@ -1,0 +1,55 @@
+.button {
+    border-radius: 18px;
+    border: none;
+    column-gap: 10px;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Configurando o botão de classe PRIMARY */
+.button.primary {
+    background-color: #0C70F2;
+    color: #FFF;
+}
+
+.button.button.primary:hover {
+    background-color: #0056b3;
+}
+
+/* Configurando o botão de classe SECONDARY */
+.button.secondary {
+    background-color: #1D1D1D;
+    color: #FFF;
+}
+
+.button.button.secondary:hover {
+    background-color: #4D5053;
+}
+
+/* Configurando o botão de classe OUTLINE */
+.button.outline {
+    background-color: #FFF;
+    border: 2px solid #0C70F2;
+    color: #0C70F2;
+}
+
+.button.button.outline:hover {
+    background-color: #0C70F2;
+    color: #FFF;
+}
+
+/* Configurando o botão de classe DISABLE */
+.button:disabled, button:disabled>:hover {
+    background-color: #CCC;
+    color: #666;
+    pointer-events: none;
+}
+
+.unstyled{
+    background-color: #FFF;
+    padding: 0;
+}
